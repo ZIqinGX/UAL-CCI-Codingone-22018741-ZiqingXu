@@ -20,11 +20,11 @@ context.putImageData(imageData2,0,0);
 
 The third part is one copy of this painting which is produced by programming and convolution. It will change its color, brightness, contrast with mouse movement and simulate the rusty corruption and decay process in an art way. In the tutorial of this term, the way of producing convolution effect is using a 'kernel' of -1 0 1 in only one dimension and it can be used in either x or y dimension. However, In this program, according to the principle and examples from Utkarsh Sinha and Victor Powell, author tried to use 3x3 kernels to produce convolution. For each 3x3 pixels from the original pictures, each of the single pixel will multiply the kernel of corresponding position and then get the total sum of nine numbers. After this process, new pixel of new canvas is produced. This is why the processed picture looks more vague. This is the basic logic of how this author learn to make convolution and the real process is little more complex. First, to store the pixel information and manage them, the R,G,B and alpha numbers needed. Here author used this formula: 
 
-position=(j+i*imageData.width)*4;
-imageData.data[position] = c%255;
-imageData.data[position+1] = c%255;
-imageData.data[position+2] = c%255
-imageData.data[position+3] = 255;
+# position=(j+i*imageData.width)*4;
+# imageData.data[position] = c%255;
+# imageData.data[position+1] = c%255;
+# imageData.data[position+2] = c%255
+# imageData.data[position+3] = 255;
 
 Author used this formula to get pixels of 3x3 blocks and get new Red value:
 imageData2.data[((imageWidth * i) + j) * 4] = 
