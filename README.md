@@ -46,6 +46,7 @@ and Mousemod2 which is
 to change contrast.
 
 Summary
+
 This project used mainly two things: 2D picture processing and 3D object drawing. The idea of this design work is trying to express the worries about the traditional art are in decline with the time passing (infinite rotating hourglass), and even the newest thing in today will be out of fashion one day because the development of technology never ends, meanwhile, it shows good expectation that even though everything has a gradual decline process, at the same time new things will emerge. 
 
 Reference
