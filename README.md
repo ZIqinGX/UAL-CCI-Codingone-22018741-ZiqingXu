@@ -1,11 +1,11 @@
 # UAL-CCI-Codingone-22018741-ZiqingXu
 This is my final project for Element 1: Project
 
-Background 
+##Background 
 
 This project is an interactive computational design work based on Java script and html. It is inspired from classical oil painting and artworks such as Campbell's Soup Cans created by Andy Warhol who is one of the leading artists of visual pop art movement. 
 
-Technology part
+##Technology part
 
 On the screen, there are mainly three parts. First, two concise geometric cone looks like hourglass which is simply consist of random points. They represent the passing of time. To draw these two images on screen, knowledge about drawing 3D on canvas were used. The 3D projection is done by scale: scale= fov/fov+z3d.The order is First scale, rotate, then translate.The process is similar to and based on the steps of drawing a sphere on canvas. First step is draw circles. The difference is all vertices should be connected into single vertex which has same x,y coordinates and different z coordinate.
 
@@ -45,11 +45,11 @@ and Mousemod2 which is
  ‘mouseMod2 = mouseY + imageHeight/2;’ 
 to change contrast.
 
-Summary
+##Summary
 
 This project used mainly two things: 2D picture processing and 3D object drawing. The idea of this design work is trying to express the worries about the traditional art are in decline with the time passing (infinite rotating hourglass), and even the newest thing in today will be out of fashion one day because the development of technology never ends, meanwhile, it shows good expectation that even though everything has a gradual decline process, at the same time new things will emerge. 
 
-Reference
+##Reference
 
 https://mimicproject.com/code/7d7536ae-5b21-b5ee-262f-198400c09c60
 https://aishack.in/tutorials/image-convolution-examples/ 
