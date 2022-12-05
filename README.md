@@ -7,7 +7,7 @@ This project is an interactive computational design work based on Java script an
 
 ## Technology part
 
-On the screen, there are mainly three parts. First, two concise geometric cone looks like hourglass which is simply consist of random points. They represent the passing of time. To draw these two images on screen, knowledge about drawing 3D on canvas were used. The 3D projection is done by scale: scale= fov/fov+z3d.The order is First scale, rotate, then translate.The process is similar to and based on the steps of drawing a sphere on canvas. First step is draw circles. The difference is all vertices should be connected into single vertex which has same x,y coordinates and different z coordinate.
+On the screen, there are mainly three parts. First, two concise geometric cone looks like hourglass which is simply consist of random points. They represent the passing of time. To draw these two images on screen, knowledge about drawing 3D on canvas were used. The 3D projection is done by scale: ```scale= fov/fov+z3d```.The order is First scale, rotate, then translate.The process is similar to and based on the steps of drawing a sphere on canvas. First step is draw circles. The difference is all vertices should be connected into single vertex which has same x,y coordinates and different z coordinate.
 
 Second part is one piece of classical oil painting with complicated skills which refers to traditional arts. To show this picture on screen need basic canvas drawing skills and here is used
 ```
@@ -17,7 +17,7 @@ var imageData2 = context.getImageData(0, 0, imageWidth, imageHeight);
 to get image data from picture that author uploaded.
 To get pictures, this code were used:
 
-context.putImageData(imageData2,0,0);
+```context.putImageData(imageData2,0,0);```
 
 The third part is one copy of this painting which is produced by programming and convolution. It will change its color, brightness, contrast with mouse movement and simulate the rusty corruption and decay process in an art way. In the tutorial of this term, the way of producing convolution effect is using a 'kernel' of -1 0 1 in only one dimension and it can be used in either x or y dimension. However, In this program, according to the principle and examples from Utkarsh Sinha and Victor Powell, author tried to use 3x3 kernels to produce convolution. For each 3x3 pixels from the original pictures, each of the single pixel will multiply the kernel of corresponding position and then get the total sum of nine numbers. After this process, new pixel of new canvas is produced. This is why the processed picture looks more vague. This is the basic logic of how this author learn to make convolution and the real process is little more complex. First, to store the pixel information and manage them, the R,G,B and alpha numbers needed. Here author used this formula: 
 ```
