@@ -5,7 +5,7 @@ This is my final project for Element 1: Project
 
 This project is an interactive computational design work based on Java script and html. It is inspired from classical oil painting and artworks such as Campbell's Soup Cans created by Andy Warhol who is one of the leading artists of visual pop art movement. 
 
-##Technology part
+## Technology part
 
 On the screen, there are mainly three parts. First, two concise geometric cone looks like hourglass which is simply consist of random points. They represent the passing of time. To draw these two images on screen, knowledge about drawing 3D on canvas were used. The 3D projection is done by scale: scale= fov/fov+z3d.The order is First scale, rotate, then translate.The process is similar to and based on the steps of drawing a sphere on canvas. First step is draw circles. The difference is all vertices should be connected into single vertex which has same x,y coordinates and different z coordinate.
 
