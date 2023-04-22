@@ -8,7 +8,7 @@
     /*
         This is to make sure
         the canvas is in the right position
-        on all browsers
+        on all browsers lllll
     */
 
     canvas {
